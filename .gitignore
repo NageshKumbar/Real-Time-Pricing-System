@@ -1,0 +1,37 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+
+# logs
+logs
+*.log
+npm-debug.log*
+
+# environment files
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Docker
+docker-data/
+
+# TypeScript
+*.tsbuildinfo
+
+# Redis dump
+dump.rdb
+
+# coverage
+coverage/
+
+# temp files
+tmp/
+temp/

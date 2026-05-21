@@ -1,0 +1,11 @@
+{
+  "name": "fx-hub-assignment",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix Pricing_Engine",
+    "build": "npm run build --prefix Pricing_Engine",
+    "start": "npm run start --prefix Pricing_Engine",
+    "compose:up": "npm run compose:up --prefix Pricing_Engine",
+    "compose:down": "npm run compose:down --prefix Pricing_Engine"
+  }
+}
