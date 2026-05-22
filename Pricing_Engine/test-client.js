@@ -20,7 +20,6 @@ ws.on('message', (data) => {
 ws.on('close', () => {
   console.log('Disconnected');
 });
-
 ws.on('error', (err) => {
   console.error('Error:', err);
 });

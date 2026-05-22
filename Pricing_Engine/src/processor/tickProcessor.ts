@@ -7,15 +7,15 @@ export class TickProcessor {
     process(tick: Tick): ComputedMarketData {
         this.rolling.addTick(tick);
 
-        const stats = this.rolling.getStats(tick.symbol)!;
+        const stats = this.rolling.getStats(tick.symbol);
 
         return {
             symbol: tick.symbol,
             buy: tick.buy,
             sell: tick.sell,
-            high24h: stats.high24h,
-            low24h: stats.low24h,
-            change24h: stats.change24h,
+            high24h: stats?.high24h ?? tick.buy,
+            low24h: stats?.low24h ?? tick.buy,
+            change24h: stats?.change24h ?? 0,
             timestamp: tick.timestamp,
         };
     }
