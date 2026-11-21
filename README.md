@@ -31,8 +31,6 @@ This project implements a scalable, event-driven real-time pricing engine capabl
 
 ![Real-Time Pricing Engine System Architecture](./System%20Architecture.png)
 
-> **Note:** Make sure `System Architecture.png` is placed in the root directory of the repository (or update the image path above if stored in a subfolder like `docs/`).
-
 ### Data Flow Summary
 
 ```text
